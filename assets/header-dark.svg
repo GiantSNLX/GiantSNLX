@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 176" width="100%" role="img" aria-label="tanaka.rar — Yuri Tanaka">
   <defs>
+    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1924"/>
+      <stop offset="65%" stop-color="#102a3b"/>
+      <stop offset="100%" stop-color="#143f54"/>
+    </linearGradient>
     <clipPath id="win-clip-dark">
       <rect x="1" y="1" width="878" height="174" rx="11.5"/>
     </clipPath>
@@ -9,9 +14,9 @@
       font-family: "Cascadia Mono", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
     .mark-path {
-      fill: #f7f4e8;
+      fill: #eaf8ff;
       fill-opacity: 0;
-      stroke: #72e6b2;
+      stroke: #7cd4e6;
       stroke-width: 14;
       stroke-linejoin: round;
       stroke-dasharray: 100;
@@ -29,34 +34,34 @@
       to { stroke-dashoffset: 0; }
     }
     @keyframes fill-in {
-      to { fill-opacity: 1; stroke-opacity: 0.22; }
+      to { fill-opacity: 1; stroke-opacity: 0.25; }
     }
     @keyframes blink {
       50% { opacity: 0; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .mark-path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0.22; }
+      .mark-path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0.25; }
       .cursor { animation: none; }
     }
   </style>
 
-  <!-- Janela TANAKA OS (Tema Field) -->
-  <rect x="0.5" y="0.5" width="879" height="175" rx="12" fill="#242b21" stroke="#394438"/>
+  <!-- Janela estilo blog com paleta slate/teal do perfil -->
+  <rect x="0.5" y="0.5" width="879" height="175" rx="12" fill="url(#bg-dark)" stroke="#23485c"/>
 
   <g clip-path="url(#win-clip-dark)">
-    <!-- WindowBar -->
-    <rect x="0" y="0" width="880" height="40" fill="#283025"/>
-    <line x1="0" y1="40" x2="880" y2="40" stroke="#394438"/>
-    <circle cx="22" cy="20" r="5" fill="#ff8b6b"/>
-    <circle cx="39" cy="20" r="5" fill="#ffc83a"/>
-    <circle cx="56" cy="20" r="5" fill="#72e6b2"/>
-    <text x="76" y="24" fill="#b6bbaa" font-size="11.5" class="mono">tanaka.rar</text>
-
-    <!-- Marca d'água cortada na borda direita (igual hero-marca-dagua do blog) -->
-    <g transform="translate(668 24) scale(0.32) translate(-104 -126)" opacity="0.055" fill="#f7f4e8">
+    <!-- Marca d'água YT grande e centralizada verticalmente na direita -->
+    <g transform="translate(612 -17) scale(0.39) translate(-104 -126)" opacity="0.065" fill="#8cdeed">
       <path d="M104 146 Q104 126 125 126 H299 Q326 126 343 150 L429 279 Q439 292 449 279 L548 149 Q566 126 591 126 H939 Q965 126 965 152 V237 Q965 264 939 264 H687 Q671 264 661 279 L525 445 Q502 476 502 507 V739 Q502 766 475 766 H362 Q334 766 334 738 V511 Q334 485 319 463 L110 161 Q104 153 104 146 Z"/>
       <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z"/>
     </g>
+
+    <!-- WindowBar -->
+    <rect x="0" y="0" width="880" height="40" fill="#09151f"/>
+    <line x1="0" y1="40" x2="880" y2="40" stroke="#1d3c4d"/>
+    <circle cx="22" cy="20" r="5" fill="#ff7b72"/>
+    <circle cx="39" cy="20" r="5" fill="#e3b341"/>
+    <circle cx="56" cy="20" r="5" fill="#5eead4"/>
+    <text x="76" y="24" fill="#82a0b0" font-size="11.5" class="mono">tanaka.rar</text>
   </g>
 
   <!-- Monograma YT animado -->
@@ -66,8 +71,8 @@
   </g>
 
   <!-- Prompt + Título estilo blog -->
-  <text x="158" y="84" fill="#ffc83a" font-size="13" letter-spacing="0.3" class="mono">yuri tanaka</text>
+  <text x="158" y="84" fill="#7cd4e6" font-size="13" letter-spacing="0.3" class="mono">yuri tanaka</text>
   <text x="156" y="130" font-size="44" font-weight="700" letter-spacing="-1.6" class="mono">
-    <tspan fill="#f7f4e8">tanaka</tspan><tspan fill="#ffc83a">.rar</tspan><tspan dx="2" font-weight="300" fill="#ffc83a" class="cursor">|</tspan>
+    <tspan fill="#f0f9ff">tanaka</tspan><tspan fill="#7cd4e6">.rar</tspan><tspan dx="2" font-weight="300" fill="#5eead4" class="cursor">|</tspan>
   </text>
 </svg>
