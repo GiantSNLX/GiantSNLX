@@ -15,3 +15,4 @@ Durante o dia automatizando processos fiscais, construindo coisas na web e testa
 Já que abriu: gosto de pão, de passarinhos e de transformar coisa chata em interface que funciona.
 
 </details>
+
