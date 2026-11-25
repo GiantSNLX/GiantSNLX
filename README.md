@@ -8,6 +8,6 @@ Durante o dia automatizando processos fiscais, construindo coisas na web e testa
 <details>
 <summary><code>Tanaka.rar</code> — não clique aqui</summary>
 
-Eu avisei. Já que abriu, passa lá no meu blog *(link em breve)* pra ver os bastidores do que eu ando escrevendo e testando.
+Não acesse meu blog *(em breve)*.
 
 </details>
