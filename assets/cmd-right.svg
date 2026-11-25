@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 236" width="100%" role="img" aria-label="LinkedIn Yuri Tanaka">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 242" width="100%" role="img" aria-label="LinkedIn Yuri Tanaka">
   <defs>
     <linearGradient id="bg-r" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#102a3b"/>
@@ -9,19 +9,21 @@
       <stop offset="100%" stop-color="#e3eff5"/>
     </linearGradient>
     <clipPath id="clip-r">
-      <path d="M0,1 H428 A11,11 0 0 1 439,12 V224 A11,11 0 0 1 428,235 H0 Z"/>
+      <path d="M0,1 H428 A11,11 0 0 1 439,12 V230 A11,11 0 0 1 428,241 H0 Z"/>
     </clipPath>
   </defs>
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .bg-shape { fill: url(#bg-r); }
     .win-border { stroke: #23485c; }
     .bar-bg { fill: #09151f; }
     .bar-line { stroke: #1d3c4d; }
     .bar-title { fill: #698696; }
     .wm { fill: #8cdeed; }
-    .prompt-arrow { fill: #5eead4; }
-    .hint { fill: #85d6e5; }
+    .btn-bg { fill: #15394f; stroke: #3b7c9c; }
+    .btn-text { fill: #eaf8ff; }
+    .btn-arrow { fill: #5eead4; }
     @media (prefers-color-scheme: light) {
       .bg-shape { fill: url(#bg-r-light); }
       .win-border { stroke: #cbd9e2; }
@@ -29,29 +31,31 @@
       .bar-line { stroke: #d5e1e8; }
       .bar-title { fill: #6c808c; }
       .wm { fill: #0d2a3a; }
-      .prompt-arrow { fill: #0f766e; }
-      .hint { fill: #0f5f7a; }
+      .btn-bg { fill: #ffffff; stroke: #8fb8cc; }
+      .btn-text { fill: #0d2a3a; }
+      .btn-arrow { fill: #0f5f7a; }
     }
   </style>
 
-  <path d="M0,0.5 H428 A11.5,11.5 0 0 1 439.5,12 V224 A11.5,11.5 0 0 1 428,235.5 H0 Z" class="bg-shape"/>
+  <path d="M-0.5,0.5 H428 A11.5,11.5 0 0 1 439.5,12 V230 A11.5,11.5 0 0 1 428,241.5 H-0.5 Z" class="bg-shape"/>
 
   <g clip-path="url(#clip-r)">
     <!-- Marca d'água YT grande centralizada verticalmente na direita -->
-    <g transform="translate(152 10) scale(0.40) translate(-104 -126)" opacity="0.065" class="wm">
+    <g transform="translate(152 13) scale(0.40) translate(-104 -126)" opacity="0.065" class="wm">
       <path d="M104 146 Q104 126 125 126 H299 Q326 126 343 150 L429 279 Q439 292 449 279 L548 149 Q566 126 591 126 H939 Q965 126 965 152 V237 Q965 264 939 264 H687 Q671 264 661 279 L525 445 Q502 476 502 507 V739 Q502 766 475 766 H362 Q334 766 334 738 V511 Q334 485 319 463 L110 161 Q104 153 104 146 Z"/>
       <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z"/>
     </g>
 
-    <rect x="0" y="0" width="440" height="40" class="bar-bg"/>
-    <line x1="0" y1="40" x2="440" y2="40" class="bar-line"/>
+    <rect x="-0.5" y="0" width="440.5" height="40" class="bar-bg"/>
+    <line x1="-0.5" y1="40" x2="440" y2="40" class="bar-line"/>
     <text x="414" y="24" text-anchor="end" font-size="11" class="mono bar-title">tanaka.rar</text>
   </g>
 
-  <path d="M0,0.5 H428 A11.5,11.5 0 0 1 439.5,12 V224 A11.5,11.5 0 0 1 428,235.5 H0" fill="none" class="win-border"/>
+  <path d="M0,0.5 H428 A11.5,11.5 0 0 1 439.5,12 V230 A11.5,11.5 0 0 1 428,241.5 H0" fill="none" class="win-border"/>
 
-  <!-- Gancho clicável pro LinkedIn -->
-  <text x="412" y="222" text-anchor="end" font-size="11" class="mono">
-    <tspan class="prompt-arrow">&gt;</tspan> <tspan class="hint">não me adicione no linkedin ↗</tspan>
+  <!-- Botão clicável pro LinkedIn -->
+  <rect x="196" y="207" width="216" height="24" rx="6" stroke-width="1" class="btn-bg"/>
+  <text x="304" y="223" text-anchor="middle" font-size="11.5" font-weight="600" class="sans">
+    <tspan class="btn-text">não me adicione no linkedin </tspan><tspan class="btn-arrow">↗</tspan>
   </text>
 </svg>
