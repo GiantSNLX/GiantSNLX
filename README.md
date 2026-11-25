@@ -5,14 +5,13 @@
 
 Durante o dia automatizando processos fiscais, construindo coisas na web e testando até onde dá pra ir com IA sem desligar o cérebro. De noite eu sou o Batman.
 
-- **[GuiaDF-e](https://giantsnlx.github.io/guia-Documentos-Fiscais/)** ([código](https://github.com/GiantSNLX/guia-Documentos-Fiscais)) — Espelho interativo de NF-e, NFC-e, NFS-e, CT-e e MDF-e direto no navegador. Passa o mouse em qualquer campo pra entender CFOP, NCM, CST ou IBS/CBS — ou joga um XML real lá dentro (100% offline e com dados sensíveis ocultos por padrão) pra inspecionar a nota na hora.
-- **[Manual IBS e CBS](https://giantsnlx.github.io/manual-ibs-cbs/)** ([código](https://github.com/GiantSNLX/manual-ibs-cbs)) — A Reforma Tributária na Zona Franca de Manaus, Amazonas e Roraima sem ter que caçar resposta em PDF gigante. A legislação vem direto da fonte oficial por script (limpando texto revogado) e o próprio build trava se alguma regra entrar sem link pro artigo da lei.
-- **[Projeção Nova Jovens 2](https://giantsnlx.github.io/projecao-nova-jovens/)** ([código](https://github.com/GiantSNLX/projecao-nova-jovens)) — Painel de operação pro ministério de projeção da igreja: escala das 5 posições da mesa, controle do culto ao vivo, formatação de letras e um simulador sincronizado dos 3 telões do palco que valida mídias e já gera o `.zip` pronto pro Holyrics.
+- **[GuiaDF-e](https://giantsnlx.github.io/guia-Documentos-Fiscais/)** ([código](https://github.com/GiantSNLX/guia-Documentos-Fiscais)) — Notas fiscais na tela de um jeito interativo pra consultar cada campo ou abrir XMLs direto no navegador.
+- **[Manual IBS e CBS](https://giantsnlx.github.io/manual-ibs-cbs/)** ([código](https://github.com/GiantSNLX/manual-ibs-cbs)) — Guia navegável da Reforma Tributária na ZFM, AM e RR com cada regra ligada direto no artigo da lei.
+- **[Projeção Nova Jovens 2](https://giantsnlx.github.io/projecao-nova-jovens/)** ([código](https://github.com/GiantSNLX/projecao-nova-jovens)) — Painel do ministério de projeção da igreja: escala, culto ao vivo, simulador dos telões e exportação pro Holyrics.
 
 <details>
 <summary><code>Tanaka.rar</code> (não extrair)</summary>
 
-Já que abriu: gosto de pão, de passarinhos e de transformar coisa chata em interface que funciona.
+Já que abriu: gosto de pão, de passarinhos e de transformar coisa chata em interface que funciona. Também anoto ideias e bastidores do que vou testando lá no meu blog *(link em breve)*.
 
 </details>
-
