@@ -1,9 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg" />
-  <img alt="Yuri Tanaka — Tanaka.rar" src="./assets/header-light.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg?v=5" />
+  <img alt="Yuri Tanaka — Durante o dia automatizando processos fiscais, construindo coisas na web e testando até onde dá pra ir com IA sem desligar o cérebro. De noite eu sou o Batman." src="./assets/header-light.svg?v=5" width="100%" />
 </picture>
-
-Durante o dia automatizando processos fiscais, construindo coisas na web e testando até onde dá pra ir com IA sem desligar o cérebro. De noite eu sou o Batman.
 
 <details>
 <summary><code>Tanaka.rar</code> — não clique aqui</summary>
