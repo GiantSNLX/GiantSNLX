@@ -8,6 +8,6 @@ Durante o dia automatizando processos fiscais, construindo coisas na web e testa
 <details>
 <summary><code>Tanaka.rar</code> — não clique aqui</summary>
 
-Não acesse meu blog *(em breve)*.
+Não acesse [meu blog](https://tanakarar.com.br).
 
 </details>
