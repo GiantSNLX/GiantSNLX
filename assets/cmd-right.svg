@@ -54,8 +54,8 @@
   <path d="M0,0.5 H428 A11.5,11.5 0 0 1 439.5,12 V258 A11.5,11.5 0 0 1 428,269.5 H0" fill="none" class="win-border"/>
 
   <!-- Botão clicável pro LinkedIn (com respiro em todos os lados) -->
-  <rect x="188" y="214" width="224" height="28" rx="7" stroke-width="1" class="btn-bg"/>
-  <text x="300" y="232" text-anchor="middle" font-size="11.5" font-weight="600" class="sans">
-    <tspan class="btn-text">não me adicione no linkedin </tspan><tspan class="btn-arrow">↗</tspan>
+  <rect x="214" y="214" width="198" height="28" rx="7" stroke-width="1" class="btn-bg"/>
+  <text x="313" y="232" text-anchor="middle" font-size="11.5" font-weight="600" class="sans">
+    <tspan class="btn-text">me adicione no linkedin </tspan><tspan class="btn-arrow">↗</tspan>
   </text>
 </svg>

@@ -111,8 +111,8 @@
   <text x="28" y="196" font-size="13" font-weight="600" class="sans batman">De noite eu sou o Batman.</text>
 
   <!-- Botão clicável pro blog (com respiro em todos os lados) -->
-  <rect x="28" y="214" width="184" height="28" rx="7" stroke-width="1" class="btn-bg"/>
-  <text x="120" y="232" text-anchor="middle" font-size="11.5" font-weight="600" class="sans">
-    <tspan class="btn-text">não acesse meu blog </tspan><tspan class="btn-arrow">↗</tspan>
+  <rect x="28" y="214" width="156" height="28" rx="7" stroke-width="1" class="btn-bg"/>
+  <text x="106" y="232" text-anchor="middle" font-size="11.5" font-weight="600" class="sans">
+    <tspan class="btn-text">acesse meu blog </tspan><tspan class="btn-arrow">↗</tspan>
   </text>
 </svg>
