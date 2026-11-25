@@ -8,6 +8,6 @@ Durante o dia automatizando processos fiscais, construindo coisas na web e testa
 <details>
 <summary><code>Tanaka.rar</code> — não clique aqui</summary>
 
-Já que abriu: gosto de pão, de passarinhos e de transformar coisa chata em interface que funciona. Também anoto ideias e bastidores do que vou testando lá no meu blog *(link em breve)*.
+Eu avisei. Já que abriu, passa lá no meu blog *(link em breve)* pra ver os bastidores do que eu ando escrevendo e testando.
 
 </details>
