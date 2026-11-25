@@ -8,6 +8,6 @@ Durante o dia automatizando processos fiscais, construindo coisas na web e testa
 <details>
 <summary><code>Tanaka.rar</code> — não clique aqui</summary>
 
-Não acesse [meu blog](https://tanakarar.com.br).
+Não acesse [meu blog](https://tanakarar.com.br) e não me adicione no [LinkedIn](https://www.linkedin.com/in/yuri-tanaka-controladoria-fiscal-processos-automacao).
 
 </details>

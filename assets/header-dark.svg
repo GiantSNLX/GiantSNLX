@@ -1,26 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 148" width="100%" role="img" aria-label="Yuri Tanaka — Tanaka.rar">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 176" width="100%" role="img" aria-label="tanaka.rar — Yuri Tanaka">
   <defs>
-    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#091824"/>
-      <stop offset="65%" stop-color="#112f41"/>
-      <stop offset="100%" stop-color="#164e65"/>
-    </linearGradient>
-    <linearGradient id="accent-dark" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7cd4e6"/>
-      <stop offset="100%" stop-color="#7cd4e6" stop-opacity="0"/>
-    </linearGradient>
+    <clipPath id="win-clip-dark">
+      <rect x="1" y="1" width="878" height="174" rx="11.5"/>
+    </clipPath>
   </defs>
   <style>
     .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-    }
-    .sans {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-family: "Cascadia Mono", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
     .mark-path {
-      fill: #eaf8ff;
+      fill: #f7f4e8;
       fill-opacity: 0;
-      stroke: #7cd4e6;
+      stroke: #72e6b2;
       stroke-width: 14;
       stroke-linejoin: round;
       stroke-dasharray: 100;
@@ -31,49 +22,52 @@
     .mark-t {
       animation-delay: 0.15s, 0.65s;
     }
-    .line-reveal {
-      transform-box: fill-box;
-      transform-origin: left center;
-      transform: scaleX(0);
-      animation: expand-x 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
-    }
-    .pulse {
-      animation: blink 1.8s ease-in-out infinite;
+    .cursor {
+      animation: blink 1.2s step-end infinite;
     }
     @keyframes draw-stroke {
       to { stroke-dashoffset: 0; }
     }
     @keyframes fill-in {
-      to { fill-opacity: 1; stroke-opacity: 0.25; }
-    }
-    @keyframes expand-x {
-      to { transform: scaleX(1); }
+      to { fill-opacity: 1; stroke-opacity: 0.22; }
     }
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.25; }
+      50% { opacity: 0; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .mark-path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0.25; }
-      .line-reveal { animation: none; transform: scaleX(1); }
-      .pulse { animation: none; }
+      .mark-path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0.22; }
+      .cursor { animation: none; }
     }
   </style>
 
-  <rect x="0.5" y="0.5" width="879" height="147" rx="10" fill="url(#bg-dark)" stroke="#23485c"/>
+  <!-- Janela TANAKA OS (Tema Field) -->
+  <rect x="0.5" y="0.5" width="879" height="175" rx="12" fill="#242b21" stroke="#394438"/>
 
-  <g transform="translate(705 16) scale(0.18) translate(-104 -126)" opacity="0.06" fill="#8cdeed">
-    <path d="M104 146 Q104 126 125 126 H299 Q326 126 343 150 L429 279 Q439 292 449 279 L548 149 Q566 126 591 126 H939 Q965 126 965 152 V237 Q965 264 939 264 H687 Q671 264 661 279 L525 445 Q502 476 502 507 V739 Q502 766 475 766 H362 Q334 766 334 738 V511 Q334 485 319 463 L110 161 Q104 153 104 146 Z"/>
-    <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z"/>
+  <g clip-path="url(#win-clip-dark)">
+    <!-- WindowBar -->
+    <rect x="0" y="0" width="880" height="40" fill="#283025"/>
+    <line x1="0" y1="40" x2="880" y2="40" stroke="#394438"/>
+    <circle cx="22" cy="20" r="5" fill="#ff8b6b"/>
+    <circle cx="39" cy="20" r="5" fill="#ffc83a"/>
+    <circle cx="56" cy="20" r="5" fill="#72e6b2"/>
+    <text x="76" y="24" fill="#b6bbaa" font-size="11.5" class="mono">tanaka.rar</text>
+
+    <!-- Marca d'água cortada na borda direita (igual hero-marca-dagua do blog) -->
+    <g transform="translate(668 24) scale(0.32) translate(-104 -126)" opacity="0.055" fill="#f7f4e8">
+      <path d="M104 146 Q104 126 125 126 H299 Q326 126 343 150 L429 279 Q439 292 449 279 L548 149 Q566 126 591 126 H939 Q965 126 965 152 V237 Q965 264 939 264 H687 Q671 264 661 279 L525 445 Q502 476 502 507 V739 Q502 766 475 766 H362 Q334 766 334 738 V511 Q334 485 319 463 L110 161 Q104 153 104 146 Z"/>
+      <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z"/>
+    </g>
   </g>
 
-  <g transform="translate(36 40) scale(0.10625) translate(-104 -126)">
+  <!-- Monograma YT animado -->
+  <g transform="translate(36 74) scale(0.10625) translate(-104 -126)">
     <path d="M104 146 Q104 126 125 126 H299 Q326 126 343 150 L429 279 Q439 292 449 279 L548 149 Q566 126 591 126 H939 Q965 126 965 152 V237 Q965 264 939 264 H687 Q671 264 661 279 L525 445 Q502 476 502 507 V739 Q502 766 475 766 H362 Q334 766 334 738 V511 Q334 485 319 463 L110 161 Q104 153 104 146 Z" pathLength="100" class="mark-path"/>
     <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z" pathLength="100" class="mark-path mark-t"/>
   </g>
 
-  <circle cx="163" cy="54" r="3.5" fill="#5eead4" class="pulse"/>
-  <text x="174" y="58" fill="#85d6e5" font-size="12" letter-spacing="1.2" class="mono">Tanaka.rar</text>
-  <text x="159" y="92" fill="#f0f9ff" font-size="30" font-weight="700" letter-spacing="-0.4" class="sans">Yuri Tanaka</text>
-  <rect x="159" y="105" width="170" height="2" rx="1" fill="url(#accent-dark)" class="line-reveal"/>
+  <!-- Prompt + Título estilo blog -->
+  <text x="158" y="84" fill="#ffc83a" font-size="13" letter-spacing="0.3" class="mono">yuri tanaka</text>
+  <text x="156" y="130" font-size="44" font-weight="700" letter-spacing="-1.6" class="mono">
+    <tspan fill="#f7f4e8">tanaka</tspan><tspan fill="#ffc83a">.rar</tspan><tspan dx="2" font-weight="300" fill="#ffc83a" class="cursor">|</tspan>
+  </text>
 </svg>
