@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 176" width="100%" role="img" aria-label="tanaka.rar — Yuri Tanaka">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 176" width="100%" role="img" aria-label="Yuri Tanaka — Tanaka.rar">
   <defs>
     <linearGradient id="bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f6f9fb"/>
       <stop offset="65%" stop-color="#edf4f8"/>
       <stop offset="100%" stop-color="#e3eff5"/>
+    </linearGradient>
+    <linearGradient id="accent-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f5f7a"/>
+      <stop offset="100%" stop-color="#0f5f7a" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="win-clip-light">
       <rect x="1" y="1" width="878" height="174" rx="11.5"/>
@@ -11,7 +15,10 @@
   </defs>
   <style>
     .mono {
-      font-family: "Cascadia Mono", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    }
+    .sans {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
     .mark-path {
       fill: #0d2a3a;
@@ -27,8 +34,14 @@
     .mark-t {
       animation-delay: 0.15s, 0.65s;
     }
+    .line-reveal {
+      transform-box: fill-box;
+      transform-origin: left center;
+      transform: scaleX(0);
+      animation: expand-x 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
+    }
     .cursor {
-      animation: blink 1.2s step-end infinite;
+      animation: blink 1.15s step-end infinite;
     }
     @keyframes draw-stroke {
       to { stroke-dashoffset: 0; }
@@ -36,16 +49,20 @@
     @keyframes fill-in {
       to { fill-opacity: 1; stroke-opacity: 0.25; }
     }
+    @keyframes expand-x {
+      to { transform: scaleX(1); }
+    }
     @keyframes blink {
       50% { opacity: 0; }
     }
     @media (prefers-reduced-motion: reduce) {
       .mark-path { animation: none; stroke-dashoffset: 0; fill-opacity: 1; stroke-opacity: 0.25; }
+      .line-reveal { animation: none; transform: scaleX(1); }
       .cursor { animation: none; }
     }
   </style>
 
-  <!-- Janela estilo blog com paleta clara do perfil -->
+  <!-- Janela CMD com paleta clara do perfil -->
   <rect x="0.5" y="0.5" width="879" height="175" rx="12" fill="url(#bg-light)" stroke="#cbd9e2"/>
 
   <g clip-path="url(#win-clip-light)">
@@ -55,13 +72,13 @@
       <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z"/>
     </g>
 
-    <!-- WindowBar -->
+    <!-- Barra da janela CMD -->
     <rect x="0" y="0" width="880" height="40" fill="#eef3f7"/>
     <line x1="0" y1="40" x2="880" y2="40" stroke="#d5e1e8"/>
     <circle cx="22" cy="20" r="5" fill="#e06c60"/>
     <circle cx="39" cy="20" r="5" fill="#d9a426"/>
     <circle cx="56" cy="20" r="5" fill="#1a9e8f"/>
-    <text x="76" y="24" fill="#596c78" font-size="11.5" class="mono">tanaka.rar</text>
+    <text x="76" y="24" fill="#596c78" font-size="11.5" class="mono">~/GiantSNLX</text>
   </g>
 
   <!-- Monograma YT animado -->
@@ -70,9 +87,10 @@
     <path d="M798 293 V722 Q798 766 752 766 H583 V510 Q583 481 600 456 L678 330 Q706 293 744 293 Z" pathLength="100" class="mark-path mark-t"/>
   </g>
 
-  <!-- Prompt + Título estilo blog -->
-  <text x="158" y="84" fill="#0f5f7a" font-size="13" letter-spacing="0.3" class="mono">yuri tanaka</text>
-  <text x="156" y="130" font-size="44" font-weight="700" letter-spacing="-1.6" class="mono">
-    <tspan fill="#0d2a3a">tanaka</tspan><tspan fill="#0f5f7a">.rar</tspan><tspan dx="2" font-weight="300" fill="#0f5f7a" class="cursor">|</tspan>
+  <!-- Prompt CMD + Nome em sans limpa + linha de destaque -->
+  <text x="159" y="84" font-size="13" letter-spacing="0.8" class="mono">
+    <tspan fill="#0f766e">&gt;</tspan> <tspan fill="#0f5f7a">Tanaka.rar</tspan><tspan dx="2" fill="#0f766e" class="cursor">_</tspan>
   </text>
+  <text x="159" y="121" fill="#0d2a3a" font-size="34" font-weight="700" letter-spacing="-0.5" class="sans">Yuri Tanaka</text>
+  <rect x="159" y="134" width="185" height="2" rx="1" fill="url(#accent-light)" class="line-reveal"/>
 </svg>
